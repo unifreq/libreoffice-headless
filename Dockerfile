@@ -8,10 +8,7 @@ ARG JAVA_PATH=${JAVA_PATH:-a58eab1ec242421181065cdc37240b08}
 ENV JVM_BASE=/usr/lib64/jvm
 ENV JAVA_HOME=${JVM_BASE}/java
 
-RUN rm -f /etc/zypp/repos.d/* && \
-zypper ar -fc http://mirrors.163.com/openSUSE/tumbleweed/repo/oss/ "OSS" && \
-zypper ar -fc http://mirrors.163.com/openSUSE/tumbleweed/repo/non-oss/ "NON OSS" && \
-zypper -n in aaa_base-extras busybox libcares2 libexpat1 libmetalink3 timezone wget && \
+RUN zypper -n in aaa_base-extras busybox libcares2 libexpat1 libmetalink3 timezone wget && \
 rm -rf \
 /etc/skel/.emacs \
 /etc/skel/.inputrc \
@@ -26,8 +23,6 @@ rm -rf \
 /usr/lib/systemd/system/check-battery.timer \
 /usr/share/fillup-templates \
 /var/adm/backup \
-/usr/share/licenses/libcares2 \
-/usr/share/licenses/libmetalink3 \
 /usr/bin/busybox.install \
 /usr/share/busybox \
 /usr/share/info \
