@@ -1,12 +1,10 @@
 FROM opensuse/tumbleweed
-
 MAINTAINER xuewenlong <flippy@sina.com>
 
 ARG JAVA_VERSION=${JAVA_VERSION:-8}
 ARG JAVA_UPDATE=${JAVA_UPDATE:-172}
 ARG JAVA_BUILD=${JAVA_BUILD:-11}
 ARG JAVA_PATH=${JAVA_PATH:-a58eab1ec242421181065cdc37240b08}
-
 ENV JVM_BASE=/usr/lib64/jvm
 ENV JAVA_HOME=${JVM_BASE}/java
 
@@ -162,5 +160,4 @@ rm -rf \
 zypper clean -a
 
 VOLUME /var/cache/fontconfig
-
 ENTRYPOINT [ "/usr/bin/run_soffice.sh" ]
