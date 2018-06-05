@@ -4,7 +4,7 @@ set timezone to Asia/Shanghai
 add busybox
 add oracle jre8u172
 add libreoffice 6.04
-delete some unused files and directorys
+delete some unused files and directories
 total size is 7xxMB
 
 usage example:
