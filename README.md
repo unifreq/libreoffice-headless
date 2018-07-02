@@ -1,5 +1,5 @@
 # libreoffice-headless
-base on opensuse/tumbleweed:latest
+base on opensuse
 set timezone to Asia/Shanghai
 add busybox
 add oracle jre8u172
