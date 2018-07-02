@@ -1,4 +1,4 @@
-FROM opensuse/tumbleweed
+FROM opensuse/leap:15
 MAINTAINER xuewenlong <flippy@sina.com>
 
 ARG JAVA_VERSION=${JAVA_VERSION:-8}
