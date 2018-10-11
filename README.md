@@ -2,7 +2,7 @@
 base on opensuse
 set timezone to Asia/Shanghai
 add busybox
-add oracle jre8u172
+add oracle jre8
 add libreoffice 6.04
 delete some unused files and directories
 total size is 7xxMB
